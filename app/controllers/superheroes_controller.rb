@@ -1,5 +1,8 @@
 class SuperheroesController < ApplicationController
-	 before_action :set_superhero, only: [:show, :edit, :update, :destroy]
+	 # before_action :set_superhero, only: [:show, :edit, :update, :destroy]
+
+# Added id to see if id would work but no luck :( 
+
 
   def index
     @superheroes = Superhero.all
@@ -9,11 +12,11 @@ class SuperheroesController < ApplicationController
 # 	render(:template => 'superheroes/show')
 # end
 
-def show
-	 @superheroes = Superhero.find(params[:id])
+ # def show
+ #      @superhero = Superhero.find(params[:id])
+ #    end
+# 	 #not sure why superheroes can not locate superhero by id
 
-	 #not sure why superheroes can not locate superhero by id
-end
 
  def new
     @superhero = Superhero.new

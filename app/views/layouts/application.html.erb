@@ -11,14 +11,16 @@
   <body>
 
 
-
+<li>
 <%= link_to 'Superpower List', superpower_path(@superpower_id) %> 
 <%= link_to 'Back to Superhero List', superhero_path %>
 
 
 <%= link_to 'Back to Superhero List', superhero_path %>
 
-<%= link_to 'New Superhero', new_superhero_path %>
+<%= link_to 'Create Superhero', new_superhero_path %>
+
+</li>
   	
     <%= yield %>
   </body>
