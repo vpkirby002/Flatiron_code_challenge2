@@ -1,0 +1,34 @@
+
+   <h1> Superhero Bio Page </h1>      
+<!-- <p>Find this file in app/views/home/main.html.erb</p>   -->
+
+
+<h1><%= @superheroes %></h1>
+	<p><%= @superheroes %></p>
+
+
+
+<p id="notice"><%= notice %></p>
+
+
+
+<p>
+	<li>
+	
+  <strong>Superhero Name:</strong>
+
+
+  <strong>Super Name:</strong>
+
+
+  <strong>Superhero Powers:</strong>
+
+</li>
+
+  <!-- Just testing out above line -->
+
+</p>
+
+
+<%= link_to 'Edit', superhero_path(@superheroes) %> 
+<%= link_to 'Back to Superhero List', superpower_path %>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ImmersiveRailsAssessment</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+
+
+<%= link_to 'Superpower List', superpower_path(@superpower_id) %> 
+<%= link_to 'Back to Superhero List', superhero_path %>
+
+
+<%= link_to 'Back to Superhero List', superhero_path %>
+
+<%= link_to 'New Superhero', new_superhero_path %>
+  	
+    <%= yield %>
+  </body>
+</html>

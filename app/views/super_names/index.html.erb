@@ -1,0 +1,20 @@
+<h2>Super Hero Info Page</h2>
+
+<!-- <p>Find this file in app/views/home/index.html.erb</p>   -->
+
+
+<ul>
+  <% @super_names.each do |super_name| %>
+    <li><%= link_to superhero.super_name , superhero_path(superhero.id) %>
+    </li>
+
+    <br>
+
+    
+
+  <% end %>
+  </ul>
+
+<%= link_to 'Superpower List', superpower_path(@superpower_id) %> 
+<%= link_to 'Back to Superhero List', superhero_path %>
+
