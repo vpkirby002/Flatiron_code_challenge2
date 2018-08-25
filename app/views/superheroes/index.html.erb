@@ -5,13 +5,12 @@
 
 <ul>
   <% @superheroes.each do |superhero| %>
-    <li><%= link_to superhero.super_name , superhero_path(superhero.id) %>
-    </li>
-
-    <br>
-
     
-
+    <li><a href="/superheroes/<%= superhero.id %>"><%= superhero.name %></a>
+    </li>
+ 
+    <br>
+ 
   <% end %>
   </ul>
 

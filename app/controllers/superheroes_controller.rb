@@ -9,18 +9,27 @@ class SuperheroesController < ApplicationController
   end
 
 # def index
-# 	render(:template => 'superheroes/show')
+# 	render(:template => 'superheroes/new')
 # end
-
- # def show
- #      @superhero = Superhero.find(params[:id])
- #    end
-# 	 #not sure why superheroes can not locate superhero by id
 
 
  def new
+    
     @superhero = Superhero.new
+
   end
+
+
+
+ def show
+
+      @superhero = Superhero.find(params[:id])
+   
+    end
+# 	 #not sure why superheroes can not locate superhero by id
+
+
+
 
   # GET /superheroes/1/edit
   def edit

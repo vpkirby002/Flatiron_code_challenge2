@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   get 'home/index'
   get '/superheroes' => 'superheroes#index', as: 'superhero'
-  get '/superheroes/bio' => 'superheroes#show', as: 'superhero/bio'
-  get '/superheroes/new' => 'superheroes#new', as: 'superhero/new'
+  get '/superheroes/:id' => 'superheroes#show', as: 'superhero/bio'
+  get '/superheroes/new' => 'superheroes#new', as: 'superheroes/new'
   get '/superpowers' => 'superpowers#index', as: 'superpower'
   get '/super_names' => 'super_names#index', as: 'super_name'
   
@@ -18,7 +18,6 @@ Rails.application.routes.draw do
 
 end
 
-
 # root to 'superheroes#index'
 
 
@@ -33,7 +32,6 @@ end
 # match "Tony Stark", 		to: "Iron Man"
 # match "Carol Danvers", 		to: "Captain Marvel"
  
-
 
 #   {name:"", super_name:"Spider-Man" },
 #   {name:"Steve Rogers", super_name:"Captain America" },

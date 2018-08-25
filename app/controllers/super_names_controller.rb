@@ -1,7 +1,14 @@
 class Super_namesController < ApplicationController
+ 
+
   def index
-    @super_names = Super_name.all
+    @super_names = Super_name.id
   end
+
+  #  def 
+  #   @super_names = Super_name.all
+  # end
+
 end
 
 

@@ -1,4 +1,4 @@
-# Rails Code Challenge
+ # Rails Code Challenge
 
 It's time to put our Rails know-how to the test. Today, we have a superhero application.
 
@@ -28,7 +28,7 @@ Read through the instructions to get a sense of the scope of this code challenge
 
 ![img](gif2.gif)
 
-1. Create the associations between models. You may have to alter the current schema to get your code working. If you've set up your relationships properly, you should be able to run `rake db:seed` without errors, and confirm in console that the superheroes and powers have been created with the proper relations.
+1. Create the associations between models. You may have to alter the current schema to get your code working. If you've set up your relationships properly, you should be able to run `rake db:seed` without errors, and confirm in console that the superheroes and powers have been created with the proper relations. DONE
 
 2. On the superheroes index page, a superhero's name should link to the superhero's show page.
 
@@ -36,9 +36,9 @@ Read through the instructions to get a sense of the scope of this code challenge
 
 4. The superpower show page should have its name and description.
 
-5. As a visitor to the website, I should be able to create a new superhero with its name and super name.
+5. As a visitor to the website, I should be able to create a new superhero with its name and super name. DONE
 
-6. The form should also allow each superhero should be created with **only one of the existing superpowers**.
+6. The form should also allow each superhero should be created with **only one of the existing superpowers**. DONE
 
   ![img](add_hero.gif)
 
