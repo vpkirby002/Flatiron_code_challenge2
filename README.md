@@ -32,13 +32,13 @@ Read through the instructions to get a sense of the scope of this code challenge
 
 2. On the superheroes index page, a superhero's name should link to the superhero's show page. DONE
 
-3. The superhero show page should include the superhero's name (eg. Peter Parker), its super name (eg. Spider-Man), and its superpower. The superpower should link to the superpower show page.  
+3. The superhero show page should include the superhero's name (eg. Peter Parker), its super name (eg. Spider-Man), and its superpower. The superpower should link to the superpower show page.  Almost but not quite. 
 
-4. The superpower show page should have its name and description.
+4. The superpower show page should have its name and description. DONE
 
 5. As a visitor to the website, I should be able to create a new superhero with its name and super name. DONE
 
-6. The form should also allow each superhero should be created with **only one of the existing superpowers**. DONE...kinda
+6. The form should also allow each superhero should be created with **only one of the existing superpowers**. DONE
 
   ![img](add_hero.gif)
 

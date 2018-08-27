@@ -10,18 +10,18 @@ class SuperpowersController < ApplicationController
   end
 
 def show
-  @superpowers = Superpower.find(params[:name , :id])
+  @superpowers = Superpower.find(params[:id])
  end
 
 
 def set_superpowers
-      @superpowers = Superpower.find(params[:name])
+      @superpowers = Superpower.find(params[:id])
     end
 
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def superpower_params
-      params.require(:superpower).permit(:name , :id)
+      params.require(:superpower).permit(:name)
     end
 
 

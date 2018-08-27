@@ -1,4 +1,4 @@
 class Superpower < ApplicationRecord
 
-	 # belongs_to :superhero
+	 has_many :superhero
 end

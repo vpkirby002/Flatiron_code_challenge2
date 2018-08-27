@@ -1,12 +1,28 @@
 <h2>All Superpowers</h2>
 
+
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+
+
+
 <ul>
   <% @superpowers.each do |superpower| %>
- 	<li>
-      <%= @superpowers_id %>
-      <br>
-      Description: <%= superpower.name + '' + superpower. description %>
+ 	
+ 	<li><a href="/superpowers/<%= superpower.id %>"><%= superpower.name%></a>
     </li>
+
+    <li>
+      <%= @superpower_id %>
+      <br>
+      Description: <%= superpower.name + '' + superpower.description %>
+    </li>
+
+   
     <br>
   <% end %>
 </ul>
