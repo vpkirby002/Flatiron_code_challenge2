@@ -10,14 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170725185638) do
+ActiveRecord::Schema.define(version: 20180827171441) do
 
   create_table "superheroes", force: :cascade do |t|
     t.string   "name"
     t.string   "super_name"
     t.string   "superpower_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "superpower_type"
   end
 
   create_table "superpowers", force: :cascade do |t|

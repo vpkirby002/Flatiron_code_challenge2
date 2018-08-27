@@ -22,10 +22,8 @@ class SuperheroesController < ApplicationController
 
 
  def show
-
-      @superhero = Superhero.find(params[:id])
-   
-    end
+  @superhero = Superhero.find(params[:id])
+ end
 # 	 #not sure why superheroes can not locate superhero by id
 
 

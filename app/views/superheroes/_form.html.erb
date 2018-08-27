@@ -14,15 +14,27 @@
   <div class="field">
 
     <ul>
+
+      <br>
+      <br>
     <%= f.label  'Superhero Name' %>
     <%= f.text_field :name  %>
+
+      <br>
+      <br>
 
     <%= f.label 'Super Name' %>
     <%= f.text_field :name %>
 
+      <br>
+      <br>
 
-    <%= f.label 'Super Power' %>
-    <%= f.text_field :name %>
+
+    <%= f.label "Super Power Type" %>
+    <%= f.select(:superpower_type, options_for_select([['super strength', 'super strength' ] , ['flight', 'flight'] , ['super human senses' , 'super human senses'],  ['elasticity' , 'elasticity']])) %>
+
+      <br>
+      <br>
 
   </ul>
   </div>

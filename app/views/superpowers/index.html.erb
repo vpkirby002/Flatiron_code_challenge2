@@ -3,9 +3,9 @@
 <ul>
   <% @superpowers.each do |superpower| %>
  	<li>
-      <%= superpower.name %>
+      <%= @superpowers_id %>
       <br>
-      Description: <%= superpower.description %>
+      Description: <%= superpower.name + '' + superpower. description %>
     </li>
     <br>
   <% end %>

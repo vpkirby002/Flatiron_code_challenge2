@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   get 'home/index'
   get '/superheroes' => 'superheroes#index', as: 'superhero'
-  get '/superheroes/:id' => 'superheroes#show', as: 'superhero/bio'
   get '/superheroes/new' => 'superheroes#new', as: 'superheroes/new'
+  get '/superheroes/:id' => 'superheroes#show', as: 'superhero/bio'
   get '/superpowers' => 'superpowers#index', as: 'superpower'
+  get '/superpowers/:id' => 'superpowers#show', as: 'superpower/id'
   get '/super_names' => 'super_names#index', as: 'super_name'
   
 

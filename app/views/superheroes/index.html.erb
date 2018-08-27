@@ -6,9 +6,13 @@
 <ul>
   <% @superheroes.each do |superhero| %>
     
-    <li><a href="/superheroes/<%= superhero.id %>"><%= superhero.name %></a>
+    <li><a href="/superheroes/<%= superhero.id %>"><%= superhero.name%></a>
     </li>
  
+<!-- <li><a href="/superheroes/<%= superhero.id %>"><%= superhero.superpower_type %></a>
+    </li> -->
+ 
+
     <br>
  
   <% end %>
