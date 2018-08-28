@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   get '/superheroes' => 'superheroes#index', as: 'superhero'
   get '/superheroes/new' => 'superheroes#new', as: 'superheroes/new'
   get '/superheroes/:id' => 'superheroes#show', as: 'superhero/bio'
+  get '/superpowers/:id' => 'superheroes#show', as: 'superpower/id'
   get '/superpowers' => 'superpowers#index', as: 'superpower'
-  get '/superpowers/:id' => 'superheroes#show', as: 'superpower/bio'
   get '/super_names' => 'super_names#index', as: 'super_name'
   
 
