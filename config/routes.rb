@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/superheroes/new' => 'superheroes#new', as: 'superheroes/new'
   get '/superheroes/:id' => 'superheroes#show', as: 'superhero/bio'
   get '/superpowers/:id' => 'superheroes#show', as: 'superpower/id'
+  # get '/superpowers/:id' => 'superpowers#show', as: 'superpower/id'
   get '/superpowers' => 'superpowers#index', as: 'superpower'
   get '/super_names' => 'super_names#index', as: 'super_name'
   

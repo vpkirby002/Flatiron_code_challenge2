@@ -1,9 +1,8 @@
 <h2>All Superpowers</h2>
 
 
-<%= form_tag("/search", method: "get") do %>
-  <%= label_tag(:q, "Search for:") %>
-  <%= text_field_tag(:q) %>
+<%= form_tag superhero_path, :method =>  'get' do %>
+  <%= text_field_tag :search, params[:search] %>
   <%= submit_tag("Search") %>
 <% end %>
 
