@@ -5,7 +5,7 @@ class SuperheroesController < ApplicationController
 
 
   def index
-    @superheroes = Superhero.where(["superpower_id LIKE ?", "%#{params[:search]}%"])
+    @superheroes = Superhero.search(params[:search])
   end
 
 # Finally got search bar to find superheroes by superpower ids but does not list out superpowers
