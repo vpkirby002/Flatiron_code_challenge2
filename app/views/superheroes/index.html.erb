@@ -11,19 +11,17 @@
 <ul>
   <% @superheroes.each do |superhero| %>
     
-    <li><a href="/superheroes/<%= superhero.id %>"><%= superhero.name%></a>
+    <li>
+      <a href="/superheroes/<%= superhero.id %>"><%= superhero.name%></a>
     </li>
 
-
- 
 <!-- <li><a href="/superheroes/<%= superhero.id %>"><%= superhero.superpower_type %></a>
     </li> -->
- 
 
     <br>
  
   <% end %>
-  </ul>
+</ul>
 
 <%= link_to 'Superpower List', superpower_path(@superpower_id) %> 
 <%= link_to 'Back to Superhero List', superhero_path %>

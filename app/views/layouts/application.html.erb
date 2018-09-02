@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ImmersiveRailsAssessment</title>
+    <title>Superheroes</title>
+    <link rel="stylesheet" href="/app/assets/stylsheets/application.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
 
-
-<li>
-<%= link_to 'Superpower List', superpower_path(@superpower_id) %> 
-<%= link_to 'Back to Superhero List', superhero_path %>
-
-
-<%= link_to 'Back to Superhero List', superhero_path %>
-
-<%= link_to 'Create Superhero', new_superhero_path %>
-
-</li>
+  <li>
+    <%= link_to 'Superpower List', superpower_path(@superpower_id) %> 
+    <%= link_to 'Back to Superhero List', superhero_path %>
+    <%= link_to 'Back to Superhero List', superhero_path %>
+    <%= link_to 'Create Superhero', new_superhero_path %>
+  </li>
   	
-    <%= yield %>
+  <%= yield %>
   </body>
+
 </html>
