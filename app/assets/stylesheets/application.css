@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-body {
+body, p {
 	font-family: 'Cabin Sketch', cursive;
 	color: #EDF6E9;
 	background-image: url('/assets/wonder_woman.jpg');

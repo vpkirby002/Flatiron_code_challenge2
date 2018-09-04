@@ -2,10 +2,10 @@ Superhero.destroy_all
 Superpower.destroy_all
 
 superpowers = [
-  {name:"super strength: ", description: " gives the wielder super human strengths"},
-  {name:"flight : ", description: " gives the wielder the ability to fly through the skys at supersonic speed"},
-  {name:"super human senses: ", description: " llows the person to user their senses at super human level"},
-  {name:"elasticity: ", description: " can stretch the human body to extreme lengths"},
+  {name:"super strength: ", description: "1. gives the wielder super human strengths"},
+  {name:"flight : ", description: "2. gives the wielder the ability to fly through the skys at supersonic speed"},
+  {name:"super human senses: ", description: "3. allows the person to user their senses at super human level"},
+  {name:"elasticity: ", description: "4. can stretch the human body to extreme lengths"},
 ]
 
 superpowers.each {|superpower| Superpower.create(superpower)}
